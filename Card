@@ -9,82 +9,99 @@
       background: #f4f4f4;
       margin: 0;
       padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
     .perfil-container {
-      max-width: 800px;
-      margin: 40px auto;
+      max-width: 400px;
       background: #fff;
       padding: 20px;
       border-radius: 12px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
     }
     .foto-atleta {
-      width: 150px;
-      height: 150px;
+      width: 100px;
+      height: 100px;
       object-fit: cover;
       border-radius: 50%;
       border: 3px solid #333;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
     .infos {
       display: flex;
+      justify-content: space-around;
+      align-items: center;
       flex-wrap: wrap;
-      justify-content: space-between;
+      margin-top: 10px;
     }
-    .infos div {
-      width: 45%;
-      margin-bottom: 15px;
+    .info-item {
+      text-align: center;
+      flex: 1;
     }
-    .infos img {
-      width: 40px;
-      height: 40px;
-      vertical-align: middle;
-    }
-    .infos strong {
+    .info-item strong {
       display: block;
-      font-size: 1.1em;
+      font-size: 1.2em;
     }
-    .logos-times img {
-      height: 60px;
-      margin-right: 15px;
+    .historico {
+      margin-top: 15px;
+      text-align: left;
+    }
+    .historico h3 {
+      font-size: 1em;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    .historico ul {
+      list-style: none;
+      padding: 0;
+      font-size: 0.9em;
+    }
+    .historico li {
+      margin: 5px 0;
     }
   </style>
 </head>
 <body>
   <div class="perfil-container">
-    <center>
-      <img src="imagens-site/AddText_04-06-08.49.50.png" alt="Foto do Atleta" class="foto-atleta">
-      <h2>Nome do Atleta</h2>
-    </center>
+    <h2>Igor Lima</h2>
+    <p>Goleiro</p>
     
     <div class="infos">
-      <div>
-        <img src="imagens-site/bandeira-brasil.png" alt="Bandeira do Brasil">
+      <div class="info-item">
+        <img src="imagens-site/bandeira-brasil.png" alt="Brasil" width="40">
         <strong>Brasil</strong>
-        Nacionalidade<br>
-        <strong>15 anos</strong>
       </div>
-      <div>
-        <strong>24/12/2009</strong><br>
-        Data de Nascimento
-      </div>
-      <div>
-        <strong>1,75m</strong><br>
-        Altura
-      </div>
-      <div>
-        <strong>2</strong><br>
-        N° Camisa
+      <div class="info-item">
+        <img src="imagens-site/real-concordiense.png" alt="Real Concordiense" width="40">
+        <strong>Real Concordiense</strong>
       </div>
     </div>
-
-    <h3>Equipe Atual</h3>
-    <img src="imagens-site/sporting-original.png" alt="Sporting Sintrial" style="height: 80px;">
-
-    <h3>Clubes Anteriores</h3>
-    <div class="logos-times">
-      <img src="imagens-site/los-santos.png" alt="Los Santos">
-      <img src="imagens-site/real-original.png" alt="Real Concordiense">
+    
+    <div class="infos">
+      <div class="info-item">
+        <strong>15 anos</strong>
+        <span>24/12/2009</span>
+      </div>
+      <div class="info-item">
+        <strong>1,75m</strong>
+        <span>Altura</span>
+      </div>
+      <div class="info-item">
+        <strong>2</strong>
+        <span>N° Camisa</span>
+      </div>
+    </div>
+    
+    <div class="historico">
+      <h3>Histórico de Transferências</h3>
+      <ul>
+        <li>2025 - Real Concordiense</li>
+        <li>2024/2025 - Los Santos</li>
+        <li>2024 - Sporting Sintrial</li>
+      </ul>
     </div>
   </div>
 </body>
