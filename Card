@@ -1,101 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Igor Lima - Perfil</title>
+  <meta charset="UTF-8">
+  <title>Perfil do Atleta</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #121212;
-      color: white;
+      background: #f4f4f4;
       margin: 0;
+      padding: 0;
+    }
+    .perfil-container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff;
       padding: 20px;
-      display: flex;
-      justify-content: center;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    .card {
-      background-color: #1e1e1e;
-      border-radius: 10px;
-      padding: 20px;
-      width: 350px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    }
-    .top {
-      text-align: center;
-    }
-    .top img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
+    .foto-atleta {
+      width: 150px;
+      height: 150px;
       object-fit: cover;
-      margin-bottom: 10px;
+      border-radius: 50%;
+      border: 3px solid #333;
+      margin-bottom: 20px;
     }
-    .divider {
-      height: 1px;
-      background-color: #444;
-      margin: 20px 0;
-    }
-    .bottom {
+    .infos {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
-      align-items: center;
     }
-    .bottom .side {
-      text-align: center;
+    .infos div {
+      width: 45%;
+      margin-bottom: 15px;
     }
-    .bottom img {
-      width: 60px;
+    .infos img {
+      width: 40px;
+      height: 40px;
+      vertical-align: middle;
+    }
+    .infos strong {
+      display: block;
+      font-size: 1.1em;
+    }
+    .logos-times img {
       height: 60px;
-      margin-bottom: 5px;
-    }
-    .history {
-      margin-top: 20px;
-    }
-    .history-item {
-      display: flex;
-      align-items: center;
-      margin-bottom: 10px;
-    }
-    .history-item img {
-      width: 30px;
-      height: 30px;
-      margin-right: 10px;
+      margin-right: 15px;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <div class="top">
-      <img src="AddText_04-06-08.49.50.png" alt="Igor Lima" />
-      <h2>Igor Lima</h2>
-      <p>Goleiro</p>
+  <div class="perfil-container">
+    <center>
+      <img src="imagens-site/AddText_04-06-08.49.50.png" alt="Foto do Atleta" class="foto-atleta">
+      <h2>Nome do Atleta</h2>
+    </center>
+    
+    <div class="infos">
+      <div>
+        <img src="imagens-site/bandeira-brasil.png" alt="Bandeira do Brasil">
+        <strong>Brasil</strong>
+        Nacionalidade<br>
+        <strong>15 anos</strong>
+      </div>
+      <div>
+        <strong>24/12/2009</strong><br>
+        Data de Nascimento
+      </div>
+      <div>
+        <strong>1,75m</strong><br>
+        Altura
+      </div>
+      <div>
+        <strong>2</strong><br>
+        N° Camisa
+      </div>
     </div>
-    <div class="divider"></div>
-    <div class="bottom">
-      <div class="side">
-        <img src="bandeira-brasil.png" alt="Brasil" />
-        <p>Brasil</p>
-      </div>
-      <div class="side">
-        <img src="real-original.png" alt="Real Concordiense" />
-        <p>Real Concordiense</p>
-      </div>
-    </div>
-    <div class="history">
-      <h3>Histórico de transferências</h3>
-      <div class="history-item">
-        <img src="real-original.png" alt="Real Concordiense" />
-        <span>2025 – Real Concordiense</span>
-      </div>
-      <div class="history-item">
-        <img src="los-santos.png" alt="Los Santos" />
-        <span>2024/25 – Los Santos</span>
-      </div>
-      <div class="history-item">
-        <img src="sporting-original.png" alt="Sporting Sintrial" />
-        <span>2024 – Sporting Sintrial</span>
-      </div>
+
+    <h3>Equipe Atual</h3>
+    <img src="imagens-site/sporting-original.png" alt="Sporting Sintrial" style="height: 80px;">
+
+    <h3>Clubes Anteriores</h3>
+    <div class="logos-times">
+      <img src="imagens-site/los-santos.png" alt="Los Santos">
+      <img src="imagens-site/real-original.png" alt="Real Concordiense">
     </div>
   </div>
 </body>
